@@ -1,5 +1,5 @@
 baseURL: "https://examplesite.com/"
-title: aziz0x00
+title: aziz0x00's site
 paginate: 10
 theme: PaperMod-theme
 
@@ -18,7 +18,7 @@ params:
   env: developement # to enable google analytics, opengraph, twitter-cards and schema.
   title: aziz0x00
   description: "just a fellow human"
-  keywords: [Blog, Portfolio, PaperMod]
+  # keywords: [Blog, Portfolio, PaperMod]
   author:
   # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -75,17 +75,19 @@ params:
   homeInfoParams:
     title: "Hi there \U0001F44B"
     content: >
-      I'm Aziz. interested in **maths** and knowledge, happened to be involved with **computers**
+      I'm Aziz. interested in **maths** and knowledge, happened to be involved with **computers**.
 
-      - This site is mostly about interesting stuff I find on the web or else where
-
-      - between maths talks/lectures, and **general life** advices
+      - This site is mostly about interesting stuff I find on the web or elsewhere, between maths talks/lectures, and **general life** advices
 
   socialIcons:
     - name: github
       url: "https://github.com/aziz0x00"
     - name: cryptohack
-      url: "https://cryptohack/user/aeaktt"
+      url: "https://cryptohack.org/user/aeaktt"
+    - name: competitive_programing
+      url: "https://cses.fi/user/140330"
+    - name: discord
+      url: "https://discordapp.com/channels/@me/621444159135416369"
 
   # analytics:
   #   google:
