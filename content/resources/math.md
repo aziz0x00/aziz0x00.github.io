@@ -10,7 +10,7 @@ summary = "math books and lectures"
 - Michael Artin - Algebra
 - Serge Lang - Algebra
 - Nathan Jacobson - Basic Algebra
-- Paolo Aluff - Algebra: Chapter 0
+- Paolo Aluffi - Algebra: Chapter 0
 
 ### Analysis
 - Stephen Abott - Understanding Analysis

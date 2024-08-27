@@ -6,7 +6,7 @@ summary = "Al-Khwarizmiyat"
 
 ## Algorithms and Datastructures
 - CLRS book of course
-- [Handbook of Competitive Programming](https://cses.fi/book/book.pdf) from CSES by A.Laaksonen
+- [Handbook of Competitive Programming](https://cses.fi/book/book.pdf) from CSES by Antti Laaksonen
 - [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
 - [6.854/18.415 Advanced Algorithms](https://people.csail.mit.edu/moitra/854.html) from MIT \
     from the description of the course:
