@@ -1,0 +1,185 @@
+/* inspiration from Paper theme and cameron.rs */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --bg-dark: #1d1e20;
+  }
+
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    scrollbar-color: #545454 #262626;
+    tab-size: 4;
+    font-family: "Source Sans 3", sans-serif;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+  }
+
+  body {
+    @apply text-neutral-800 dark:bg-[--bg-dark] dark:text-[#D4D4D4];
+    @apply min-h-screen bg-[--bg] antialiased [-webkit-tap-highlight-color:transparent];
+    /* @apply dark:before:fixed dark:before:inset-0 dark:before:bg-black/85; */
+  }
+
+  a {
+    @apply underline-offset-2 decoration-[1.5px];
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply !font-semibold;
+  }
+
+  pre {
+    direction: ltr;
+  }
+
+
+  ::selection {
+    @apply bg-neutral-200 dark:bg-neutral-600;
+  }
+
+
+  h1 {
+    @apply text-3xl font-bold my-2 text-black dark:text-white;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold my-1 text-black dark:text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-xl bg-black px-5 py-3 text-[0.95em] text-white no-underline duration-100 active:scale-95 dark:bg-white dark:text-black;
+  }
+
+  .link {
+    @apply duration-200 hover:text-black dark:hover:text-white;
+  }
+}
+
+@layer utilities {
+  .not-ready * {
+    @apply !transition-none;
+  }
+
+  .prose {
+    --tw-prose-bullets: #313131;
+    --tw-prose-invert-bullets: #c4c4c5;
+    @apply break-words;
+  }
+
+
+  .prose :where(li):not(:where([class~=not-prose], [class~=not-prose] *)) {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  .prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=not-prose], [class~=not-prose] *)) {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  .prose :where(p):not(:where([class~=not-prose], [class~=not-prose] *)) {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  .prose :where(ul>li):not(:where([class~=not-prose], [class~=not-prose] *)) {
+    padding-inline-start: 0em;
+  }
+
+  .prose :where(ul):not(:where([class~=not-prose], [class~=not-prose] *)) {
+    margin-top: 0em;
+    margin-bottom: 1.25em;
+  }
+
+  .prose :where(blockquote):not(:where([class~=not-prose], [class~=not-prose] *)) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .prose kbd:has(kbd) {
+    @apply shadow-none;
+  }
+
+  .btn-menu::before,
+  .btn-menu::after {
+    @apply block h-[2px] w-5 bg-black duration-200 content-[''] dark:invert;
+  }
+
+  .nav-wrapper {
+    background: var(--bg);
+  }
+
+  .open {
+    @apply overflow-hidden;
+  }
+
+  .open .btn-menu::before {
+    @apply w-6 translate-y-[5.5px] rotate-45;
+  }
+
+  .open .btn-menu::after {
+    @apply w-6 -translate-y-[5.5px] -rotate-45;
+  }
+
+  .open .nav-wrapper {
+    @apply top-0;
+  }
+
+  article {
+    @apply text-lg leading-[1.8] text-black dark:text-white;
+  }
+
+  article code {
+    @apply inline-block !text-sm !leading-6;
+  }
+
+  article .highlight {
+    @apply my-8;
+
+    pre {
+      @apply my-0;
+    }
+
+    >div {
+      @apply rounded-md bg-[--tw-prose-pre-bg];
+
+      table {
+        @apply my-0 table-fixed;
+
+        tr {
+          @apply flex;
+
+          td {
+            @apply p-0;
+
+            pre {
+              @apply !bg-transparent;
+            }
+          }
+
+          &:first-of-type pre {
+            @apply pr-[4px];
+
+            code span {
+              @apply !mr-0 block min-w-[18px] !p-0 text-right text-white/40;
+            }
+          }
+
+          &:last-of-type {
+            @apply overflow-auto;
+          }
+        }
+      }
+    }
+  }
+}

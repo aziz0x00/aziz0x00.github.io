@@ -30,7 +30,7 @@ date = 2024-01-05T16:43:03Z
 -   Don't claim yourselves to be pure (53:32)
 -   Speak nicely, even to the ignorant (25:63)
 -   Don't ask for repayment for favours (76:9)
--   If enemy wants peace, ther accept it (8:61)
+-   If enemy wants peace, then accept it (8:61)
 -   Return a greeting in a better manner (4:86)
 -   Don't remind others of your favours (2:264)
 -   Make peace between fighting groups (49:9)
@@ -42,7 +42,7 @@ date = 2024-01-05T16:43:03Z
 -   Oppression/corruption is worse than killing (2:217)
 -   Preach to others in a good and wise manner (16:125)
 -   Don't accuse others of immorality without proof (24:4)
--   Don't call someone disbeliever without knowing (4.94)
+-   Don't call someone disbeliever without knowing (4:94)
 -   Know your enemies can become your close friends (41:34)
 -   Don't wrongly consume the wealth of the vulnerable (4:29)
 -   Forgive others, as you would like Allah to forgive you (24:22)
@@ -52,7 +52,7 @@ date = 2024-01-05T16:43:03Z
 -   Don't sit with those who mock religion until they change the subject (4:140)
 -   The worldly life is nothing but an illusionary enjoyment (3:185)
 
-I actually found this in a youtube comment to [this very informative lecture](https://www.youtube.com/watch?v=C8M4i9fvq1M)
+I actually found this in a youtube comment to [this very informative lecture](https://www.youtube.com/watch?v=C8M4i9fvq1M).
 I checked the validity of some of the references, but I will update this post insha'Allah when I fully check.
 
 ![screenshot of the comment](yt_scrt_hiswc.png)

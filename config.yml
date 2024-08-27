@@ -1,7 +1,7 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://aziz0x00.github.io/"
 title: aziz0x00's site
 paginate: 10
-theme: PaperMod-theme
+theme: paper-custom
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -15,69 +15,19 @@ minify:
   minifyOutput: true
 
 params:
+  color: 'light'                           # linen, wheat, gray, light
   env: developement # to enable google analytics, opengraph, twitter-cards and schema.
   title: aziz0x00
   description: "just a fellow human"
-  # keywords: [Blog, Portfolio, PaperMod]
-  author:
-  # author: ["Me", "You"] # multiple authors
-  # images: ["<link or path of image for opengraph, twitter-cards>"]
-  # DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: false
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: false
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  # avatar: 'GRAVATAR_EMAIL'                 # gravatar email or image url
+  name: "Selam \U0001F44B"
+  bio: >
+    I'm Aziz. interested in **maths** and knowledge, happened to be involved with **computers**. \
 
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    \
 
-  label:
-    text: "aziz0x00"
-    # icon: /apple-touch-icon.png
-    iconHeight: 35
-
-  # profile-mode
-  # profileMode:
-  #   enabled: false # needs to be explicitly set
-  #   title: ExampleSite
-  #   subtitle: "This is subtitle"
-  #   imageUrl: "<img location>"
-  #   imageWidth: 120
-  #   imageHeight: 120
-  #   imageTitle: my image
-  #   buttons:
-  #     - name: Posts
-  #       url: posts
-  #     - name: Tags
-  #       url: tags
-
-  # home-info mode
-  homeInfoParams:
-    title: "Hi there \U0001F44B"
-    content: >
-      I'm Aziz. interested in **maths** and knowledge, happened to be involved with **computers**.
-
-      - This site is mostly about interesting stuff I find on the web or elsewhere, between maths talks/lectures, and **general life** advices
+    This site is mostly about interesting stuff I find on the web or elsewhere, between maths talks/lectures, and **general life** advices.
 
   socialIcons:
     - name: github
@@ -86,50 +36,14 @@ params:
       url: "https://cryptohack.org/user/aeaktt"
     - name: competitive_programing
       url: "https://cses.fi/user/140330"
+      title: "CSES - Competitive Programming"
     - name: discord
       url: "https://discordapp.com/channels/@me/621444159135416369"
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
-  #   bing:
-  #     SiteVerificationTag: "XYZabc"
-  #   yandex:
-  #     SiteVerificationTag: "XYZabc"
+  mainSections: posts
 
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
 
-  # editPost:
-  #   url: "https://github.com/aziz0x00/content"
-  #   text: "Suggest Changes" # edit text
-  #   appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
-# menu:
-#   main:
-#     - identifier: links
-#       name: maths booklist recommendations
-#       url: /categories/
-#       weight: 10
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
-markup:
-  highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+menu:
+  main:
+    - name: "{ resources }"
+      url: /resources
