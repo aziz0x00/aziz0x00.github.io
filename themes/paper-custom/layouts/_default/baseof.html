@@ -42,7 +42,7 @@
   {{ partial "head.html" . }}
   <body class="text-[#1f1f1f] duration-200 ease-out dark:text-white invisible">
     <script>
-    document.fonts.onloadingdone = () => document.body.classList.remove('invisible'); // a hack to make sure fonts are applied
+    document.fonts.ready.then(() => { document.body.classList.remove('invisible'); }) // a hack to make sure fonts are applied
     </script>
     {{ partial "header.html" . }}
 
