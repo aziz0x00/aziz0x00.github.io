@@ -50,7 +50,7 @@
 <section class="relative mb-10 p-4 rounded-lg border border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 transition-all shadow-none ease-out duration-200 hover:shadow hover:dark:bg-[#333333]">
   <h3 class="!my-0">{{ .Title }}</h3>
   <time class="text-sm antialiased opacity-60">{{ .Date | time.Format ":date_medium" }}</time>
-  <p class="text-base">{{ .Summary | strings.Truncate 122 }}</p>
+  <p class="text-base">{{ .Summary | strings.Truncate 128 | plainify  }}</p>
   <a class="absolute inset-0 text-[0]" href="{{ .RelPermalink }}"></a>
 </section>
 {{ end }}

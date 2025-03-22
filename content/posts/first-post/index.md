@@ -5,7 +5,7 @@ date = 2024-01-05T16:43:03Z
 
 
 -   Don't lie (22:30)
--   Dont spy (49:12)
+-   Don't spy (49:12)
 -   Don't insult (49:11)
 -   Don't waste (17:26)
 -   Feed the poor (22:36)

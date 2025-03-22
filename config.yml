@@ -1,6 +1,5 @@
 baseURL: "https://aziz0x00.github.io/"
 title: aziz0x00's site
-paginate: 10
 theme: paper-custom
 
 enableRobotsTXT: true
@@ -47,3 +46,6 @@ menu:
   main:
     - name: "{ resources }"
       url: /resources
+
+pagination:
+  pagerSize: 10
