@@ -1,13 +1,19 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5+Charted&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+
+
 
   <!-- title -->
   <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
@@ -23,10 +29,7 @@
   <meta name="author" content="{{ or .Params.author $site_author }}" />
   {{ else }}
   <!---->
-  <meta
-    name="description"
-    content="{{ site.Params.description | default (print `A personal blog`) }}"
-  />
+  <meta name="description" content="{{ site.Params.description | default (print `A personal blog`) }}" />
   <meta name="author" content="{{ $site_author }}" />
   {{ end }}
 
@@ -59,11 +62,7 @@
 
   <!-- highlight js -->
   {{ if and .IsPage (not site.Params.disableHLJS) }}
-  <script
-    defer
-    src="{{ `highlight.min.js` | absURL }}"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
+  <script defer src="{{ `highlight.min.js` | absURL }}" onload="hljs.initHighlightingOnLoad();"></script>
   {{ end }}
 
   <!-- math -->
@@ -75,14 +74,8 @@
   <!---->
 
   <!-- favicon -->
-  <link
-    rel="icon"
-    href="{{ site.Params.favicon | default `favicon.ico` | absURL }}"
-  />
-  <link
-    rel="apple-touch-icon"
-    href="{{ site.Params.appleTouchIcon | default `apple-touch-icon.png` | absURL }}"
-  />
+  <link rel="icon" href="{{ site.Params.favicon | default `favicon.ico` | absURL }}" />
+  <link rel="apple-touch-icon" href="{{ site.Params.appleTouchIcon | default `apple-touch-icon.png` | absURL }}" />
 
   <!-- generator -->
   {{ hugo.Generator }}
@@ -99,12 +92,7 @@
   {{ template "_internal/twitter_cards.html" . }}
   <!-- RSS -->
   {{ range .AlternativeOutputFormats }}
-  <link
-    rel="{{ .Rel }}"
-    type="{{ .MediaType.Type }}"
-    href="{{ .Permalink }}"
-    title="{{ site.Title }}"
-  />
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}" />
   {{ end }}
 
   <!-- canonical -->

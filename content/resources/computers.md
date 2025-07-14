@@ -4,6 +4,7 @@ date = 2024-08-26T02:00:16Z
 summary = "Al-Khwarizmiyat"
 +++
 
+
 ## Algorithms and Datastructures
 - CLRS book of course
 - [Handbook of Competitive Programming](https://cses.fi/book/book.pdf) from CSES by Antti Laaksonen
@@ -15,11 +16,19 @@ summary = "Al-Khwarizmiyat"
 - [MIT 18.404J Theory Of Computation, Fall 2020](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/video_galleries/video-lectures/)
 - [6.045/18.400 Automata, Computability, and Complexity](https://www.youtube.com/watch?v=vhTlazaGAF8&list=PLmUkKyGlHupqtANK5Pmo1gjLlmW1pF1q7&index=1) and [course site](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/pages/lecture-notes/)
 
+## Information Theory
+- [Information Theory, Pattern Recognition, and Neural Networks](http://www.inference.org.uk/itprnn_lectures/)
+
+## Machine Learning
+- [The Deep Learning Book](https://www.deeplearningbook.org/)
+- ["How I became a machine learning practitioner"](https://blog.gregbrockman.com/how-i-became-a-machine-learning-practitioner) by Greg Brockman
+
 
 ## Security
 - [Cryptohack](https://cryptohack.org) is a great place to learn modern cryptography effectively
 - [angstromCTF past competitions](https://angstromctf.com/) are great for learning imo, you can play almost all past challenges locally, the past challenge files can be found [here](https://github.com/blairsec/challenges/tree/master/angstromctf).
 - yo, this is probably all you need for resources on this subject: [CryptoCat Hacking Resources](https://github.com/Crypto-Cat/CTF)
+- recently I found this amazing resource [](https://www.isec.tugraz.at/teaching/)
 
 ## Background
 - [MIT 6.002 Circuits And Electronics, Spring 2007](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/video_galleries/video-lectures/)

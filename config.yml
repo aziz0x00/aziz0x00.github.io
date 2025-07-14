@@ -44,8 +44,8 @@ params:
 
 menu:
   main:
-    - name: "{ resources }"
-      url: /resources
+    - name: "~/resources/"
+      url: /resources/
 
 pagination:
   pagerSize: 10

@@ -45,15 +45,18 @@
 
 <!-- Articles -->
 {{ $paginator := .Paginate $pages }}
-{{ range $index, $page := $paginator.Pages }}
+<div class="flex flex-wrap gap-2">
+  {{ range $index, $page := $paginator.Pages }}
 
-<section class="relative mb-10 p-4 rounded-lg border border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 transition-all shadow-none ease-out duration-200 hover:shadow hover:dark:bg-[#333333]">
-  <h3 class="!my-0">{{ .Title }}</h3>
-  <time class="text-sm antialiased opacity-60">{{ .Date | time.Format ":date_medium" }}</time>
-  <p class="text-base">{{ .Summary | strings.Truncate 128 | plainify  }}</p>
-  <a class="absolute inset-0 text-[0]" href="{{ .RelPermalink }}"></a>
-</section>
-{{ end }}
+  <section
+    class="relative p-4 rounded-lg border border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 transition-all shadow-none ease-out duration-200 hover:shadow hover:dark:bg-[#333333] min-w-60 flex-grow">
+    <h3 class="!my-0">{{ .Title }}</h3>
+    <time class="text-sm antialiased opacity-60">{{ .Date | time.Format ":date_medium" }}</time>
+    <p class="text-base">{{ .Summary | strings.Truncate 128 | plainify }}</p>
+    <a class="absolute inset-0 text-[0]" href="{{ .RelPermalink }}"></a>
+  </section>
+  {{ end }}
+</div>
 
 <!-- Main Nav -->
 {{ if gt $paginator.TotalPages 1 }}
@@ -70,12 +73,12 @@
 {{ if .IsHome }}
 <h3>Find me elsewhere</h3>
 <div class="inline-flex [&_svg]:w-[26px]">
-    {{- range site.Params.socialIcons }}
-    <a  class="px-2" href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
-        title="{{ (.title | default .name) | title }}">
-        {{ partial "svg.html" . }}
-    </a>
-    {{- end }}
+  {{- range site.Params.socialIcons }}
+  <a class="px-2" href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+    title="{{ (.title | default .name) | title }}">
+    {{ partial "svg.html" . }}
+  </a>
+  {{- end }}
 </div>
 {{ end }}
 
