@@ -1,11 +1,12 @@
-<header class="mx-auto  max-w-[1072px]">
-  <div class="flex px-4 m-2 rounded-xl lg:justify-center bg-gray-100 dark:bg-gray-100/5">
+<header class="mx-auto p-2  max-w-[1072px]">
+  <div class="flex px-4 rounded-xl lg:justify-center bg-gray-100 dark:bg-gray-100/5">
 
     <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
-      <a class="-translate-y-[1px] text-4xl" style="font-family: 'Micro 5 Charted', sans-serif;" href="/"> {{ site.Title
-        }} </a>
+      <a class="-translate-y-[1px] text-4xl" style="font-family: 'Micro 5 Charted', sans-serif;" href="/">
+        {{ site.Title }}
+      </a>
       <div
-        class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer {{ if site.Params.monoDarkIcon }}[background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert{{ else }}[background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)]{{ end }} dark:[background-position:right]"
+        class="btn-dark text-[0] ltr:ml-2 h-6 w-6 shrink-0 cursor-pointer {{ if site.Params.monoDarkIcon }}[background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert{{ else }}[background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)]{{ end }} dark:[background-position:right]"
         role="button" aria-label="Dark"></div>
 
     </div>
@@ -63,9 +64,9 @@
       class="nav-wrapper  inset-x-0 top-full z-40 flex  select-none justify-center duration-200 dark:bg-[--bg-dark] static h-auto flex-row !bg-transparent pb-0 transition-none !bg-gray-100">
       {{ $url := .RelPermalink }}<!---->
       {{ with site.Menus.main }}
-      <nav class="ml-12 flex flex-row items-center space-x-10 rtl:space-x-reverse">
+      <nav class="ml-auto  flex flex-row items-center space-x-10 rtl:space-x-reverse">
         {{ range . }}
-        <a class="flex text-center p-1 m-3 rounded-md text-md bg-gray-200 dark:bg-gray-200/10"
+        <a class="flex text-center p-1 m-3 mr-0 rounded-md text-md bg-gray-200 dark:bg-gray-200/10"
           style="font-family: 'IBM Plex Mono';" href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
       </nav>
